@@ -28,8 +28,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid text-uppercase">
+      <nav class="navbar navbar-expand-lg navbar-light position-absolute top-0 start-0 end-0 z-index">
+        <div class="container text-uppercase">
           <a class="navbar-brand" href="#">
             <img src="./images/logo-bookmark.svg" alt="bookmark_logo" />
           </a>
@@ -37,26 +37,47 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex justify-content-between text-dark fw-bolder">
+            <ul class="navbar-nav d-flex justify-content-between">
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link text-dark" href="#">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link text-dark" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link text-dark" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <button class="btn btn-danger text-white px-5 py-2" type="submit">Login</button>
+                <button class="btn btn-danger text-white px-5 py-2 text-uppercase" type="submit">Login</button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <main id="hero" class="position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-4 order-2 order-lg-1 text-center text-lg-start">
+              <h1>A Simple Bookmark Manager</h1>
+              <p class="text-secondary">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+              <!-- <div class="row d-flex justify-content-start"> -->
+              <!-- <div class="col"> -->
+              <a class="btn btn-primary" href="#" role="button"> Get it on Chrome </a>
+              <!-- </div> -->
+              <!-- <div class="col"> -->
+              <a class="btn btn-gray" href="#" role="button"> Get it on Firefox </a>
+              <!-- </div> -->
+              <!-- </div> -->
+            </div>
+            <div class="hero-image col col-lg-6 offset-lg-2 off order-1 order-lg-2">
+              <img src="./images/illustration-hero.svg" alt="illustration hero" />
+            </div>
+          </div>
+        </div>
+      </main>
     </header>
 
-    Features Pricing Contact Login A Simple Bookmark Manager A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free. Get it on Chrome Get it on Firefox
     Features Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go. Simple Bookmarking Speedy Searching Easy Sharing Bookmark in one click
     Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites. More Info Intelligent search Our powerful search feature will help you find saved sites in
     no time at all. No need to trawl through all of your bookmarks. More Info Share your bookmarks Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button. More Info
