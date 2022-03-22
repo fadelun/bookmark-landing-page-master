@@ -25,6 +25,10 @@ body {
   background-color: #f7f7f7;
 }
 
+.btn-gray-2 {
+  background-color: var(--grayish-blue);
+}
+
 .btn-danger {
   background-color: var(--soft-red);
 }
@@ -58,8 +62,47 @@ main#hero::before {
   background-color: transparent;
 }
 
+article #features {
+  width: 50%;
+}
+
+article #features p {
+  width: 70%;
+}
+
+article .features_links {
+  border-bottom: solid #adb5bd 1px;
+}
+
+article .features_links a:hover {
+  color: black !important;
+}
+
+article .features_links a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--soft-red);
+}
+
 @media (max-width: 992px) {
   main#hero::before {
     bottom: 200px;
+    width: 80%;
+    height: 50%;
+  }
+
+  article #features {
+    width: 95%;
+  }
+  article #features p {
+    width: 100%;
+  }
+
+  article .features_links {
+    border-bottom: solid transparent 1px;
   }
 }
