@@ -1,24 +1,11 @@
 /* Rubik font */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
-
-:root {
-  --soft-blue: hsl(231, 69%, 60%);
-  --soft-red: hsl(0, 94%, 66%);
-  --grayish-blue: hsl(229, 8%, 60%);
-  --very-dark-blue: hsl(229, 31%, 21%);
-}
-
-body {
-  font-size: 18px;
-  font-family: "Rubik", sans-serif;
-}
-
 .fw-bold {
   font-weight: 500 !important;
 }
 
 .btn-primary {
-  background-color: var(--soft-blue);
+  background-color: #5368df;
 }
 
 .btn-gray {
@@ -26,23 +13,28 @@ body {
 }
 
 .btn-gray-2 {
-  background-color: var(--grayish-blue);
+  background-color: #9194a1;
 }
 
 .btn-danger {
-  background-color: var(--soft-red);
+  background-color: #fa5757;
 }
 
 .btn-danger:hover {
   background-color: transparent;
-  color: var(--soft-red) !important;
+  color: #fa5757 !important;
 }
 
-main#hero {
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+body main#hero {
   margin-top: 10rem;
 }
 
-main#hero::before {
+body main#hero::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -51,58 +43,91 @@ main#hero::before {
   height: 400px;
   border-radius: 100% 0 0 100%;
   z-index: -1;
-  background-color: var(--soft-blue);
+  background-color: #5368df;
 }
-.navbar-nav {
+
+body .navbar-nav {
   width: 30rem;
   z-index: 99999;
 }
 
-.hero-image {
+body .hero-image {
   background-color: transparent;
 }
 
-article #features {
+body article #features {
   width: 50%;
 }
 
-article #features p {
+body article #features p {
   width: 70%;
 }
 
-article .features_links {
+body article .features_links {
   border-bottom: solid #adb5bd 1px;
 }
 
-article .features_links a:hover {
+body article .features_links a:hover {
   color: black !important;
 }
 
-article .features_links a:hover::before {
+body article .features_links a:hover::before {
   content: "";
+  background-color: blue;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background-color: var(--soft-red);
+  background-color: #fa5757;
+}
+
+body article #feature::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 600px;
+  height: 400px;
+  border-radius: 0 100% 100% 0;
+  z-index: -1;
+  background-color: #5368df;
 }
 
 @media (max-width: 992px) {
-  main#hero::before {
+  body main#hero::before {
     bottom: 200px;
     width: 80%;
     height: 50%;
   }
-
-  article #features {
-    width: 95%;
+  body article #features {
+    width: 90%;
   }
-  article #features p {
+  body article #features p {
     width: 100%;
   }
-
-  article .features_links {
-    border-bottom: solid transparent 1px;
+  body article #features .features_links {
+    border-bottom: 0;
+  }
+  body article #features .features_links a:nth-child(odd) {
+    border-top: 2px solid #adb5bd;
+    border-bottom: 2px solid #adb5bd;
+  }
+  body article #features .features_links a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: transparent;
+  }
+  body article #feature::before {
+    width: 90%;
+    height: 50%;
+  }
+  body article #feature .column_2 {
+    margin-top: 100px;
   }
 }
+/*# sourceMappingURL=style.css.map */
