@@ -94,6 +94,19 @@ body article #feature::before {
   background-color: #5368df;
 }
 
+body article #pricing {
+  margin-top: 16rem;
+}
+
+body article #pricing #extension-list {
+  height: 450px;
+}
+
+body article #pricing #extension-list .app_card {
+  width: 300px;
+  height: 370px;
+}
+
 @media (max-width: 992px) {
   body main#hero::before {
     bottom: 200px;
