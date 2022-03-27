@@ -111,6 +111,24 @@ body article .accordion .accordion-item .accordion-button:hover {
   color: #fa5757;
 }
 
+body article .accordion .accordion-item .accordion-button:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+body article .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: black;
+}
+
+body footer {
+  background-color: #5368df;
+}
+
+body footer p.user_joined {
+  white-space: 100px;
+}
+
 @media (max-width: 992px) {
   body main#hero::before {
     bottom: 200px;
