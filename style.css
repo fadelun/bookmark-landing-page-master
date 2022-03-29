@@ -8,8 +8,20 @@
   background-color: #5368df;
 }
 
+.btn-primary:hover {
+  background-color: white;
+  color: #5368df !important;
+  border: 1px solid #5368df;
+}
+
 .btn-gray {
   background-color: #f7f7f7;
+}
+
+.btn-gray:hover {
+  background-color: white;
+  color: #252b46 !important;
+  border: 1px solid #252b46;
 }
 
 .btn-gray-2 {
@@ -21,8 +33,9 @@
 }
 
 .btn-danger:hover {
-  background-color: transparent;
+  background-color: white;
   color: #fa5757 !important;
+  border: 1px solid #fa5757;
 }
 
 body {
@@ -123,10 +136,24 @@ body article .accordion .accordion-item .accordion-button:not(.collapsed) {
 
 body footer {
   background-color: #5368df;
+  padding-top: 6rem;
 }
 
-body footer p.user_joined {
-  white-space: 100px;
+body footer .container p.user_joined {
+  letter-spacing: 6px;
+}
+
+body footer nav.navbar {
+  background-color: #252b46;
+}
+
+body footer nav.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+body footer nav.navbar a:hover {
+  color: #fa5757;
 }
 
 @media (max-width: 992px) {
