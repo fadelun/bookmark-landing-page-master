@@ -72,7 +72,7 @@ body article #features {
   width: 50%;
 }
 
-body article #features p {
+body article #features .container p {
   width: 70%;
 }
 
@@ -80,11 +80,24 @@ body article .features_links {
   border-bottom: solid #adb5bd 1px;
 }
 
-body article .features_links a:hover {
+body article .features_links .collapse_feature {
+  position: relative;
+}
+
+body article .features_links .collapse_feature input.radio-btn {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  opacity: 0;
+}
+
+body article .features_links .collapse_feature input.radio-btn:checked ~ label {
   color: black !important;
 }
 
-body article .features_links a:hover::before {
+body article .features_links .collapse_feature input.radio-btn:checked ~ label::before {
   content: "";
   background-color: blue;
   position: absolute;
@@ -93,6 +106,11 @@ body article .features_links a:hover::before {
   right: 0;
   height: 4px;
   background-color: #fa5757;
+}
+
+body article .features_links .collapse_feature label:hover {
+  color: #fa5757;
+  cursor: pointer;
 }
 
 body article #feature::before {
