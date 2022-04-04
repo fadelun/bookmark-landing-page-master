@@ -80,7 +80,7 @@
         <p class="text-secondary mx-auto mb-5">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         <div class="features_links row">
           <div class="collapse_feature m-0 p-0 col-lg-4 col-12 py-3 text-secondary position-relative">
-            <input type="radio" id="option01" name="collapse" value="Simple Bookmarking" class="radio-btn" />
+            <input type="radio" id="option01" name="collapse" value="Simple Bookmarking" class="radio-btn" checked />
             <label for="option01">Simple Bookmarking</label>
           </div>
           <div class="collapse_feature m-0 p-0 col-lg-4 col-12 py-3 text-secondary position-relative">
@@ -104,7 +104,7 @@
       <section id="feature" class="mt-5 position-relative">
         <div class="container">
           <div class="tab_describe row">
-            <div class="column_1 col">
+            <div class="column_1 col ps-lg-5 pe-lg-0">
               <img src="./images/illustration-features-tab-1.svg" alt="illustration-features-tab-1" />
             </div>
             <div class="column_2 col offset-lg-1 d-flex justify-content-center align-items-center">
@@ -211,26 +211,32 @@
       <div class="container">
         <p class="user_joined text-uppercase mb-5">35,000+ already joined</p>
         <h2 class="mx-auto mb-5">Stay up-to-date with what we’re doing</h2>
-        <input type="email" placeholder="Enter your email address" class="py-3 px-4" />
-        <button type="submit" class="btn btn-danger py-3 px-4">Contact us</button>
-      </div>
-      <nav class="navbar mt-5 py-4 d-flex justify-content-around position-relative">
-        <div class="flex-1 d-flex justify-content-around w-50 align-items-center">
-          <a class="navbar-brand" href="#">
-            <img src="./images/.svg" alt="bookmark_logo" />
-          </a>
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact</a>
-        </div>
+        <form action="/" class="d-flex flex-column d-lg-block">
+          <input type="email" placeholder="Enter your email address" class="rounded border-0 py-3 px-4 mb-3 mb-lg-0" required />
+          <input type="submit" class="btn btn-danger py-3 px-4" value="Contact us" />
+        </form>
 
-        <div class="flex-2 d-flex justify-content-around align-items-center">
-          <a href="#" class="mx-3">
-            <img class="icon" src="./images/icon-facebook.svg" alt="facebook" />
-          </a>
-          <a href="#" class="mx-3">
-            <img class="icon" src="./images/icon-twitter.svg" alt="facebook" />
-          </a>
+        <!-- <button type="submit" class="btn btn-danger py-3 px-4">Contact us</button> -->
+      </div>
+      <nav class="navbar mt-5 py-4 position-relative">
+        <div class="container d-flex justify-content-between">
+          <div class="flex-1 d-flex flex-column flex-lg-row justify-content-around w-50 align-items-center">
+            <a class="navbar-brand p-0" href="#">
+              <img src="./images/logo-bookmark.svg" alt="bookmark_logo" />
+            </a>
+            <a href="#" class="pb-4 mt-3 m-lg-0 p-lg-0">Features</a>
+            <a href="#" class="pb-4 p-lg-0">Pricing</a>
+            <a href="#" class="pb-4 p-lg-0">Contact</a>
+          </div>
+
+          <div class="flex-2 d-flex justify-content-around mx-auto mx-lg-0 align-items-center">
+            <a href="#" class="mx-3">
+              <img class="icon" src="./images/icon-facebook.svg" alt="facebook" />
+            </a>
+            <a href="#" class="mx-3">
+              <img class="icon" src="./images/icon-twitter.svg" alt="facebook" />
+            </a>
+          </div>
         </div>
       </nav>
     </footer>

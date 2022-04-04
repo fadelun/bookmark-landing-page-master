@@ -99,7 +99,6 @@ body article .features_links .collapse_feature input.radio-btn:checked ~ label {
 
 body article .features_links .collapse_feature input.radio-btn:checked ~ label::before {
   content: "";
-  background-color: blue;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -189,18 +188,17 @@ body footer nav.navbar a:hover {
   body article #features .features_links {
     border-bottom: 0;
   }
-  body article #features .features_links a:nth-child(odd) {
+  body article #features .features_links .collapse_feature:nth-child(odd) {
     border-top: 2px solid #adb5bd;
     border-bottom: 2px solid #adb5bd;
   }
-  body article #features .features_links a:hover::before {
+  body article #features .features_links .collapse_feature input.radio-btn:checked ~ label::before {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background-color: transparent;
+    left: 30%;
+    right: 30%;
+    background-color: #fa5757;
   }
   body article #feature::before {
     width: 90%;
@@ -208,6 +206,9 @@ body footer nav.navbar a:hover {
   }
   body article #feature .column_2 {
     margin-top: 100px;
+  }
+  body .w-50 {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
