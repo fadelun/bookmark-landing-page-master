@@ -165,7 +165,7 @@
           <div class="accordion mt-5 w-100" id="accordionExample">
             <div class="accordion-item border-start-0 border-end-0">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">What is Bookmark?</button>
+                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">What is Bookmark?</button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</div>
@@ -211,12 +211,20 @@
       <div class="container">
         <p class="user_joined text-uppercase mb-5">35,000+ already joined</p>
         <h2 class="mx-auto mb-5">Stay up-to-date with what we’re doing</h2>
-        <form action="/" class="d-flex flex-column d-lg-block">
-          <input type="email" placeholder="Enter your email address" class="rounded border-0 py-3 px-4 mb-3 mb-lg-0" required />
-          <input type="submit" class="btn btn-danger py-3 px-4" value="Contact us" />
+        <form class="d-flex flex-lg-row flex-column justify-content-center needs-validation" novalidate>
+          <!-- <div class="col-lg-6"> -->
+          <!-- <label for="validationCustom01" class="form-label">City</label> -->
+          <div class="input_email mb-2">
+            <input type="email" placeholder="Enter your email address" class="rounded border-0 py-3 px-4 mb-lg-0 w-100" required />
+            <div class="invalid-feedback fst-italic text-start py-1 px-2">Whoops, make sure it's an email</div>
+          </div>
+          <!-- <input type="email" placeholder="Enter your email address" class="rounded border-0 py-3 px-4 mb-2 mb-lg-0" required /> -->
+          <!-- </div> -->
+          <div class="btn_submit">
+            <button type="submit" class="btn btn-danger ms-lg-3 py-3 px-4 w-100">Contact us</button>
+            <!-- <input type="submit" class="btn btn-danger py-3 px-4" value="Contact us" /> -->
+          </div>
         </form>
-
-        <!-- <button type="submit" class="btn btn-danger py-3 px-4">Contact us</button> -->
       </div>
       <nav class="navbar mt-5 py-4 position-relative">
         <div class="container d-flex justify-content-between">

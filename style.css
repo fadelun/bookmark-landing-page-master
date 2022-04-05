@@ -160,6 +160,12 @@ body footer .container p.user_joined {
   letter-spacing: 6px;
 }
 
+body footer .container .invalid-feedback {
+  color: inherit !important;
+  background-color: #fa5757 !important;
+  margin-top: 0 !important;
+}
+
 body footer nav.navbar {
   background-color: #252b46;
 }
