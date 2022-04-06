@@ -59,9 +59,12 @@ body main#hero::before {
   background-color: #5368df;
 }
 
-body .navbar-nav {
-  width: 30rem;
+body .navbar {
   z-index: 99999;
+}
+
+body .navbar .navbar-nav {
+  width: 30rem;
 }
 
 body .hero-image {
@@ -180,6 +183,39 @@ body footer nav.navbar a:hover {
 }
 
 @media (max-width: 992px) {
+  body .navbar {
+    position: fixed;
+  }
+  body .navbar .navbar-brand {
+    padding: 10px;
+  }
+  body .navbar .navbar-nav {
+    height: 100vh;
+    display: block !important;
+  }
+  body .navbar ul {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .navbar ul li.nav-item {
+    padding: 4px 0;
+  }
+  body .navbar ul li.nav-item:nth-child(odd) {
+    border-top: 1px solid #adb5bd;
+    border-bottom: 1px solid #adb5bd;
+  }
+  body .navbar ul li.nav-item a.nav-link {
+    color: white;
+  }
+  body .navbar ul li.nav_login {
+    margin-top: 2rem;
+  }
+  body .navbar ul li.nav_login button {
+    width: 100%;
+    background: transparent;
+    border-color: initial;
+  }
   body main#hero::before {
     bottom: 200px;
     width: 80%;

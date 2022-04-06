@@ -42,3 +42,20 @@ const collapseButton = () => {
 };
 
 collapseButton();
+
+const navButton = document.querySelector(".navbar-toggler");
+const navbar = document.querySelector(".navbar");
+
+console.log(navButton);
+console.log(navbar);
+
+navButton.addEventListener("click", () => {
+  if (!navButton.classList.contains("collapsed")) {
+    navbar.style.background = " hsla(229, 31%, 21%, 0.84)";
+    console.log("done");
+  } else {
+    navbar.style.background = "transparent";
+    navbar.style.transition = ".8s";
+  }
+  // console.log(navButton.classList.contains('collapsed'))
+});
