@@ -32,9 +32,6 @@ const collapseButton = () => {
       const heading = aboutFeature.firstElementChild;
       const paragraph = aboutFeature.children[1];
 
-      console.log(featureDetails[i].title);
-      console.log(featureDetails[i].text);
-
       heading.innerHTML = featureDetails[i].title;
       paragraph.innerHTML = featureDetails[i].text;
     });
@@ -45,6 +42,7 @@ collapseButton();
 
 const navButton = document.querySelector(".navbar-toggler");
 const navbar = document.querySelector(".navbar");
+const navShow = document.querySelector(".navbar-collapse");
 
 console.log(navButton);
 console.log(navbar);
@@ -52,10 +50,14 @@ console.log(navbar);
 navButton.addEventListener("click", () => {
   if (!navButton.classList.contains("collapsed")) {
     navbar.style.background = " hsla(229, 31%, 21%, 0.84)";
-    console.log("done");
+    navButton.firstElementChild.style.opacity = 0;
+    navButton.lastElementChild.style.opacity = 1;
+    console.log(navButton);
   } else {
     navbar.style.background = "transparent";
     navbar.style.transition = ".8s";
+    navButton.firstElementChild.style.opacity = 1;
+    navButton.lastElementChild.style.opacity = 0;
+    console.log(navButton);
   }
-  // console.log(navButton.classList.contains('collapsed'))
 });

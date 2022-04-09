@@ -61,10 +61,15 @@ body main#hero::before {
 
 body .navbar {
   z-index: 99999;
+  background-color: white;
 }
 
 body .navbar .navbar-nav {
   width: 30rem;
+}
+
+body .navbar .navbar-toggler:focus {
+  box-shadow: none;
 }
 
 body .hero-image {
@@ -192,9 +197,10 @@ body footer nav.navbar a:hover {
   body .navbar .navbar-nav {
     height: 100vh;
     display: block !important;
+    width: auto;
   }
   body .navbar ul {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
   }
@@ -245,6 +251,9 @@ body footer nav.navbar a:hover {
   body article #feature::before {
     width: 90%;
     height: 50%;
+  }
+  body article #feature .column_1 img {
+    width: 90vw;
   }
   body article #feature .column_2 {
     margin-top: 100px;
